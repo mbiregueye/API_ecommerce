@@ -1,7 +1,7 @@
 # API_ecommerce
 
 Mini API ecommerce developed with:
-- nodeJS node for the JavaScript exceptional environment
+- nodeJS for the JavaScript exceptional environment
 - The express dependenciesJS mongoose dotenv nodemon ...
 - A MongoDB Cloud database
 
