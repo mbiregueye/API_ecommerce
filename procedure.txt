@@ -1,0 +1,37 @@
+1- creer le projet et initiliser le avec la commande:
+
+-> npm init -y
+
+2- installer le depedances
+
+-> yarn add express mongoose dotenv nodemon  dans ce cas il va falloir installer yarn au paravant avec -> npm install --global yarn
+
+on peux aussi utiliser npm i -s express mongoose dotenv nodemaon
+
+3- Dans le fichier package.json changer la ligne  "test": "echo \"Error: no test specified\" && exit 1"    en   "start": "nodemon index.js" 
+4- Utliser la commande
+-> yarn start pour demarer maintenat le projet on peux aussi utiliser -> npm start
+
+6- aller dans https://cloud.mongodb.com/ pour creer un compte gratuit car nous utliserons la base de donnes NoSQL MongoDB cloud
+
+7- apres avoir configurer dotenv il faut redemarer l'application
+
+8- ceer le dossier router et les differents route userController.js, orderController.js, cartController.js
+
+9- ceer le dossier model et les differents model Userjs, Order.js, Cart.js et configurer es differents propriets de chaque Schema ou table ou document
+
+10- dans router on creer un auth.js pour la l'authentification et la creation de compte
+
+11- Nous utiliserons la library Crypto.Js avec le AES pour Hacher les mot de passe voir la documentation sur https://cryptojs.gitbook.io/docs/
+Exemple:
+var encrypted = CryptoJS.AES.encrypt("Message", "Secret Passphrase");
+var decrypted = CryptoJS.AES.decrypt(encrypted, "Secret Passphrase");
+
+-> yarn add crypto-js 
+oubien vnous pouvons utiliser npm i -s crypto-js
+
+-> yarn add jsonwebtoken
+oubien vnous pouvons utiliser npm i -s jsonwebtoken permet d'utiliser les token pour la securité des connexions users
+
+-> yarn add stripe
+pour ajouter le systeme de paiement stripe
